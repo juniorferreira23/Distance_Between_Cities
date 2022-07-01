@@ -16,6 +16,7 @@ router.post('/', express.json(), (req, res) => {
 
 router.get('/', (req, res) => {
     res.send('Hello World');
+    console.log(teste)
 });
 
 

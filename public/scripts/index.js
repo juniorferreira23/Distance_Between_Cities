@@ -13,12 +13,14 @@ function reqDistanceCities(){
         body: JSON.stringify(cities)
     };
     
-    fetch('http://192.168.0.110:8080/cities', options).then( res => {
+    fetch('http://192.168.0.110:3000/cities/search', options).then( res => {
         return res.text()
     })
     .then( text => {
         console.log(text)
     })
+    .catch(error => {
+        console.log(error)
+    })
     
 };
-
